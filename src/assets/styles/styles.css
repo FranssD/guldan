@@ -1,0 +1,12 @@
+html{font-size: 62.5%;}
+body{font-family:sans-serif, 'Benton Sans', 'Helvetica Neue', 'Helvetica', 'Arial'}
+
+.content {
+ position: relative
+}
+
+.main {
+  z-index: 30;
+  overflow: hidden;
+  position: relative;
+}
