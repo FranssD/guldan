@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # demo
 
 > A Vue.js project
@@ -28,3 +29,6 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+#guldan
+>>>>>>> 727769ef13b0dc105c398687fc4d32a145719bdc
