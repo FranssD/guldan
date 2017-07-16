@@ -1,8 +1,8 @@
 {
-  "name": "2.qd",
+  "name": "guldan",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "徒手砍柠檬 <liyi@shuwon.com>",
+  "author": "徒手砍西瓜 <602330491@qq.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

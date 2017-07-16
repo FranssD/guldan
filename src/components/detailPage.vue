@@ -3,14 +3,12 @@
         <div class="main">
             <Row type="flex" class="code-row-bg Travel-list">
                 <Col class="Travel" :xs="24" :sm="12" :md="8" v-for="(place,index) in listBox">
-                
                     <div class="Travel-box">
                         <div class="Travel-image">
                             <div class="CoverPhoto" :style="{backgroundImage:'url('+place.url+')'}" :key="index"></div>
                             <img src="../assets/image/tourism/Mask_430.png" alt="" class="image-Travel">
                         </div>
                     </div>
-                
                 </Col>
             </Row>
         </div>
@@ -21,6 +19,7 @@
 export default {
     data() {
         return {
+            active_item: this.$route.query.id,
             listBox: [
                 { url: require('../assets/image/tourism/20161016/wKgBs1f_hpCAHDtGAAW6MUHzXuM20.jpg')},
                 { url: require('../assets/image/tourism/20161016/wKgBs1f_i0OAHd1kAAUGsfVjjFc32.jpg')},
