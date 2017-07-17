@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="">
             © 2017 guldan. All rights reserved.
-            <a target="_blank" href="http://www.miibeian.gov.cn/">蜀ICP备？？？？号</a>
+            <a target="_blank" href="http://www.miibeian.gov.cn/">蜀ICP备17019470号</a>
         </div>
     </div>
 </template>

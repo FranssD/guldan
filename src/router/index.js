@@ -7,6 +7,7 @@ import detail from '@/components/detailPage'
 
 Vue.use(Router)
 
+
 export default new Router({
   routes: [
     {

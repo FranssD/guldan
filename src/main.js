@@ -25,3 +25,11 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+router.beforeEach((to, from, next) => {
+    iView.LoadingBar.start();
+    next();
+});
+
+router.afterEach((to, from, next) => {
+    iView.LoadingBar.finish();
+});

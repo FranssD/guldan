@@ -29,8 +29,8 @@ export default {
     data() {
         return {
             listBox: [
-                { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "Sri Lanka",id:"SL" },
-                { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"T"}
+                { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "Sri Lanka",id:"0" },
+                { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"1"}
             ]
         }
     }
