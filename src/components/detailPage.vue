@@ -4,8 +4,8 @@
             <Row type="flex" class="code-row-bg Travel-list">
                 <Col class="Travel" :xs="24" :sm="12" :md="8" v-for="(place,index) in listBox[active_item]">
                 <div class="Travel-box">
-                    <div class="Travel-image">
-                        <div class="CoverPhoto" :style="{backgroundImage:'url('+place.url+')'}" :key="index"></div>
+                    <div class="Travel-image progressive">
+                        <div class="CoverPhoto" :style="{backgroundImage:'url('+place.url+')'}" :key="index"></div> 
                         <img src="../assets/image/tourism/Mask_430.png" alt="" class="image-Travel">
                     </div>
                 </div>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {

@@ -17,7 +17,10 @@ export default {
 .footer {
     border-top: .1rem solid #e4e4e4;
     padding: 2rem 0;
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto
+}
+@media screen and (max-width:1300px){
+.footer{padding:2rem 5%}
 }
 </style>

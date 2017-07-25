@@ -1,10 +1,10 @@
 <template>
   <div class="travelPage travel">
     <div class="min-banner TbannerH travelPage-banner">
-      <div class="minbanner-text">explore every day</div>
+      <div class="minbanner-text">探索每一天</div>
     </div>
     <div class="ListPage index-Plate">
-      <h2 class="title">Travel</h2>
+      <h2 class="title">旅行</h2>
       <hr>
       <Row type="flex" class="code-row-bg Travel-list" :gutter="30">
         <Col class="Travel" :xs="24" :sm="12" :md="8" v-for="(place,index) in listBox">
@@ -20,25 +20,22 @@
         </Col>
       </Row>
     </div>
+    <footers></footers>
   </div>
 </template>
 
 <script>
-import $ from 'jquery'
+import footers from './footerPlate.vue'
 export default {
   data() {
     return {
       listBox: [
-        { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "Sri Lanka",id:"SL"},
-        { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"T"},
-        { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"T"},
-        { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"T"},
-        { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"T"},
-        { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"T"},
-        { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"T"}
+        { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "斯里兰卡",id:"0" },
+                { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "西藏",id:"1"}
       ]
     }
-  }
+  },
+   components: { footers },
 }
 </script>
 
@@ -57,10 +54,11 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 8rem;
+  font-size: 4rem;
   width: 100%;
   text-align: center;
   background: rgba(0, 0, 0, 0.36);
+  padding: 2rem 0
 }
 
 .travelPage-banner {
@@ -94,5 +92,8 @@ export default {
 
 .ListPage .Travel-list {
   margin-top: 5rem
+}
+@media screen and (max-width:1300px){
+.min-banner{height: 50vh}
 }
 </style>

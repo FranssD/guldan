@@ -4,7 +4,8 @@
   </div>
 </template>
 <script>
-import $ from 'jquery'
+import jquery from 'jquery'
+window.$=jquery
 export default {
   data() {
     return {

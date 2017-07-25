@@ -1,9 +1,8 @@
 <template>
-    <div id="game">1</div>
+    <div id="game"></div>
 </template>
 
 <script>
-import $ from 'jquery'
 export default {
     data() {
         return {

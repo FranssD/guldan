@@ -1,8 +1,8 @@
 <template>
     <div class=" travel">
         <div class="title-plate">
-            Travel
-            <router-link to='/travelPage'>View more
+            旅行
+            <router-link to='/travelPage'>更多
                 <Icon type="ios-arrow-right"></Icon>
             </router-link>
         </div>
@@ -23,14 +23,13 @@
         </Row>
     </div>
 </template>
-
 <script>
 export default {
     data() {
         return {
             listBox: [
-                { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "Sri Lanka",id:"0" },
-                { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "Tibet",id:"1"}
+                { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "斯里兰卡",id:"0" },
+                { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "西藏",id:"1"}
             ]
         }
     }
@@ -43,7 +42,8 @@ export default {
 }
 
 .travel .Travel .Travel-box {
-    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.12);
+    
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
     overflow: hidden;
 }
 
@@ -91,9 +91,9 @@ export default {
     color: #495060;
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (max-width:1300px) {
     .travel .Travel .Travel-box {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
     }
 }
 </style>

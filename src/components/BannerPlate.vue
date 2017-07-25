@@ -20,8 +20,8 @@ export default {
     data() {
         return {
             listImg: [
-                { url: require('../assets/image/tourism/banner/IMG_7179.jpg'), describe: "Third pole - my other starting point" },
-                { url: require('../assets/image/tourism/banner/IMG_5568.jpg'), describe: "A tear on the Indian Ocean" }
+                { url: require('../assets/image/tourism/banner/IMG_7179.jpg'), describe: "第三极 - 我的另一个起点" },
+                { url: require('../assets/image/tourism/banner/IMG_5568.jpg'), describe: "印度洋上的一滴眼泪" }
             ],
             isSplit: false
         }
@@ -79,15 +79,16 @@ export default {
 }
 
 
-@media only screen and (min-width:1200px) {
+@media only screen and (max-width:1300px) {
   .main.split .image-box-before {
     width: 25%;
-    height: 50vh
+    height: 80vh
   }
   .main.split .image-box-before .text-title {
     font-size: 1.4rem;
     width: 80%
   }
+  .banner{height: 50vh}
 }
 @media only screen and (max-width:768px) {
   .image-box-before {
