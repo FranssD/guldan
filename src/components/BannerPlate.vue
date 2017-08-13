@@ -27,7 +27,7 @@ export default {
         }
     },
     mounted() {
-        console.log('mounted', this)
+        //console.log('mounted', this)
         var swiper = new Swiper('.banner', {
            // pagination: '.swiper-pagination',
             paginationClickable: true,
@@ -38,12 +38,13 @@ export default {
                 swiper.startAutoplay()
             }
         });
+        
     }
 }
 </script>
 
 <style >
-.banner{height: 100vh;margin-bottom: 80px;}
+.banner{height: 100vh;}
 .image-box-before {
   height: 100vh;
   overflow: hidden;

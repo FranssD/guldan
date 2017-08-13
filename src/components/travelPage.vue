@@ -8,6 +8,7 @@
       <hr>
       <Row type="flex" class="code-row-bg Travel-list" :gutter="30">
         <Col class="Travel" :xs="24" :sm="12" :md="8" v-for="(place,index) in listBox">
+        <a :href="place.href" target="_blank">
         <div class="Travel-box">
           <div class="Travel-image">
             <div class="CoverPhoto" :style="{backgroundImage:'url('+place.url+')'}" :key="index"></div>
@@ -17,6 +18,7 @@
             <h3>{{place.title}}</h3>
           </div>
         </div>
+        </a>
         </Col>
       </Row>
     </div>
@@ -30,8 +32,8 @@ export default {
   data() {
     return {
       listBox: [
-        { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "斯里兰卡",id:"0" },
-                { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "西藏",id:"1"}
+       { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "斯里兰卡",href:"http://www.mafengwo.cn/i/6205874.html?static_url=true" },
+        { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "西藏",href:"http://www.mafengwo.cn/i/7078706.html?static_url=true"}
       ]
     }
   },

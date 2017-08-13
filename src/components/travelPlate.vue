@@ -2,13 +2,13 @@
     <div class=" travel">
         <div class="title-plate">
             旅行
-            <router-link to='/travelPage'>更多
+             <router-link to='/travelPage'>更多
                 <Icon type="ios-arrow-right"></Icon>
-            </router-link>
+            </router-link> 
         </div>
         <Row type="flex" class="code-row-bg Travel-list" :gutter="30">
             <Col class="Travel" :xs="24" :sm="12" :md="8" v-for="(place,index) in listBox">
-            <router-link :to="{ path: 'detailPage', query: { id: place.id}}">
+             <a :href="place.href" target="_blank">
                 <div class="Travel-box">
                     <div class="Travel-image">
                         <div class="CoverPhoto" :style="{backgroundImage:'url('+place.url+')'}" :key="index"></div>
@@ -18,7 +18,7 @@
                         <h3>{{place.title}}</h3>
                     </div>
                 </div>
-            </router-link>
+             </a> 
             </Col>
         </Row>
     </div>
@@ -28,8 +28,8 @@ export default {
     data() {
         return {
             listBox: [
-                { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "斯里兰卡",id:"0" },
-                { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "西藏",id:"1"}
+                { url: require('../assets/image/tourism/20161016/wKgBs1f-NfSANV_ZAAm1ZbdjPBk88.jpg'), title: "斯里兰卡",href:"http://www.mafengwo.cn/i/6205874.html?static_url=true" },
+                { url: require('../assets/image/tourism/20170604/wKgBZ1kucHGAcNs-AAazxmN_w7I73.jpg'), title: "西藏",href:"http://www.mafengwo.cn/i/7078706.html?static_url=true"}
             ]
         }
     }
@@ -42,9 +42,9 @@ export default {
 }
 
 .travel .Travel .Travel-box {
-    
-     box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
     overflow: hidden;
+    background: #fff
 }
 
 .travel .Travel .Travel-image {
@@ -93,7 +93,7 @@ export default {
 
 @media only screen and (max-width:1300px) {
     .travel .Travel .Travel-box {
-       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
     }
 }
 </style>

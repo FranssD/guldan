@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <div class="">
+        <div class="copyright">
             © 2017 guldan. All rights reserved.
             <a target="_blank" href="http://www.miibeian.gov.cn/">蜀ICP备17019470号</a>
         </div>
@@ -20,6 +20,8 @@ export default {
     max-width: 1300px;
     margin: 0 auto
 }
+.copyright{}
+.copyright a{color: #495060}
 @media screen and (max-width:1300px){
 .footer{padding:2rem 5%}
 }

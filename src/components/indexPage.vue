@@ -2,10 +2,25 @@
   <div class="content">
     <div class="main">
       <banner></banner>
-      <trave class="index-Plate"></trave>
-      <works class="index-Plate"></works>
+      <div class="weatherBg">
+        <trave class="index-Plate" style="padding-top: 80px;"></trave>
+        <works class="index-Plate"></works>
+        <footers></footers>
+        <!-- <div class="st" style="height:40px;width:40px;background:red" @click="loadData"></div> -->
+        <weather></weather>
+      </div>
+      <div class="" style="display:none">
+        <div class="list" v-if="articleContent.length !== 0">
+          <ul>
+            <li v-for="(strText,index) in articleContent.data.news_list">
+              <div class="title">{{strText.title}}</div>
+              <div class="content" v-html="strText.abstract">{{strText.abstract}}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--以上是测试用的  -->
   
-      <footers></footers>
     </div>
   </div>
 </template>
@@ -16,17 +31,23 @@ import dowBtn from './dowBtn.vue'
 import trave from './travelPlate.vue'
 import works from './worksPlate.vue'
 import footers from './footerPlate.vue'
-
+import weather from './weatherPlate.vue'
 export default {
-  mounted() {
-
-  },
   data() {
     return {
-
+      articleContent: '',
     }
   },
-  components: { banner, dowBtn, trave, works, footers },
+  mounted() {
+    
+  },
+  methods: {
+
+  },
+  created() {
+   
+  },
+  components: { banner, dowBtn, trave, works, footers, weather },
 }
 </script>
 
@@ -45,6 +66,7 @@ export default {
   line-height: 1.5;
   display: inline-block;
   margin-top: 15px;
+  color: #000
 }
 
 .index-Plate {
@@ -52,6 +74,10 @@ export default {
   margin: 0 auto 10rem;
   padding-bottom: 3.2rem;
   overflow: hidden;
+}
+
+.weatherBg {
+  position: relative
 }
 
 @media screen and (max-width:1300px) {
@@ -65,8 +91,14 @@ export default {
   .title-plate {
     text-align: center;
   }
-  .title-plate a{display: none}
-  .index-Plate{padding: 0 15px}
-  .travel .Travel-list .Travel{margin-bottom: 5rem}
+  .title-plate a {
+    display: none
+  }
+  .index-Plate {
+    padding: 0 15px
+  }
+  .travel .Travel-list .Travel {
+    margin-bottom: 5rem
+  }
 }
 </style>

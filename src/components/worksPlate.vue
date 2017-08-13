@@ -67,7 +67,7 @@ export default {
         // });
         var _this = this
         let imgs = document.querySelectorAll('img')
-        console.log(imgs)
+        //console.log(imgs)
         Array.from(imgs).forEach((item) => {
             let img = new Image()
             img.onload = () => {
